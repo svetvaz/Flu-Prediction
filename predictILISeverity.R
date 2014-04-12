@@ -15,7 +15,7 @@ library("parcor")
 library(lars)
 library(ridge)
 library(class)
-setwd('/Users/arvind/machineLearning/project/data')
+#setwd('data')
 library(e1071)
 # read in the data set
 fluData <- read.table('FinalDataSet_3_3.csv',sep=',',header=TRUE)

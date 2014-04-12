@@ -1,4 +1,4 @@
-setwd('/Users/arvind/machineLearning/project/data')
+#setwd('data')
 fluData <- read.table('compute_target.csv',sep=',',header=TRUE,fill = TRUE)
 #mean <- 1.288 # precomputed using flags
 fluData$WeightedILIPCT
@@ -58,4 +58,4 @@ for(i in fluData$WEIGHTED){
   j<-j+1
 }
 m<-cbind(fluData,ILI)
-write.table(m,file='testData1.csv',append=FALSE,sep=',',row.names=FALSE)
+write.table(m,file='fluData.csv',append=FALSE,sep=',',row.names=FALSE)

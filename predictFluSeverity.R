@@ -1,4 +1,4 @@
-setwd('/Users/arvind/machineLearning/project/data')
+#setwd('data')
 fluData <- read.table('FinalDataSet_3_3.csv',sep=',',header=TRUE)
 train<-fluData[1:520,1:12]
 # Use columns 1-9 as training data
@@ -36,7 +36,7 @@ plot(Err,pch=c(15,15),col="red",xlab = 'K value', ylab='Error')
 # Now include flu postive pct & ILI severity, cos decision trees dont seem to do very well without these attributes
 train_x<-train[,1:11]
 train_y<-train[,12]
-# scale again after including flu positive pct and ILI severity
+# Not re scaling as it doesn't make much of a change for the other methods
 train2 <- train_x
 # for(i in seq(from = 1, to = ncol(train_x))){
 #   v = var(train_x[,i])

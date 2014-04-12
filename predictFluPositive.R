@@ -1,4 +1,4 @@
-setwd('/Users/arvind/machineLearning/project/data')
+#setwd('data')
 # read in the data set
 fluData <- read.table('FinalDataSet_3_3.csv',sep=',',header=TRUE)
 train<-fluData[1:520,1:10]

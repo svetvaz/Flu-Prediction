@@ -6,7 +6,8 @@ Using machine learning techniques such as Linear regression, K nearest neighbors
 Setup
 1. Using the R console, set working directory to the folder that contains the data files (data) :
    e.g. setwd('/users/svetlana/flu_prediction/data')
-2. CalculateTargetColumn.R is used to compute the target 'ILI Severity' using a formula similar to what CDC uses
+2. CalculateTargetColumn.R is used to compute the target 'ILI Severity' using a formula similar to what CDC uses -> generates fluData.csv
+3. Copy the ILI Severity column from fluData.csv to your cleaned up data set 'FinalDataSet_3_3.csv'
 
 
 Instructions to run the code
